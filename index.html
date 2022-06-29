@@ -500,75 +500,74 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-link" data-modal-close>
-          <svg class="modal-btn">
-            <use href="./images/icons.svg#icon-cross" class="modal-svg"></use>
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn__svg-cont">
+            <use
+              href="./images/icons.svg#icon-cross"
+              class="close-btn__svg"
+            ></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
-        <form class="modal-form">
-          <div class="modal-form__container">
-            <label class="modal-label" for="user-name">Имя</label>
-            <div class="input-field">
+        <form class="form">
+          <div class="form__container">
+            <label class="input__label" for="user-name">Имя</label>
+            <div class="input__field">
               <input
                 type="text"
-                class="modal-input"
+                class="input"
                 name="user-name"
                 id="user-name"
               />
-              <svg class="form-input-icon">
+              <svg class="input__icon">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modal-form__container">
-            <label class="modal-label" for="tel">Телефон</label>
-            <div class="input-field">
-              <input type="tel" class="modal-input" name="user-tel" id="tel" />
-              <svg class="form-input-icon">
+          <div class="form__container">
+            <label class="input__label" for="tel">Телефон</label>
+            <div class="input__field">
+              <input type="tel" class="input" name="user-tel" id="tel" />
+              <svg class="input__icon">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modal-form__container">
-            <label class="modal-label" for="email">Почта</label>
-            <div class="input-field">
-              <input
-                type="email"
-                class="modal-input"
-                name="user-email"
-                id="email"
-              />
-              <svg class="form-input-icon">
+          <div class="form__container">
+            <label class="input__label" for="email">Почта</label>
+            <div class="input__field">
+              <input type="email" class="input" name="user-email" id="email" />
+              <svg class="input__icon">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modal-form__container">
-            <label class="modal-label" for="modal-comment">Коментарий</label>
+          <div class="form__container">
+            <label class="input__label" for="modal-comment">Коментарий</label>
             <textarea
               name="user-comment"
               id="modal-comment"
-              class="modal-comment"
+              class="comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
 
-          <div class="modal-checkbox">
-            <label class="modal-label"
+          <div class="check-box">
+            <label class="check-box__label"
               ><input
                 type="checkbox"
                 name="user-agrement-checked"
-                class="checkbox-input"
+                class="check-box__input"
               />
-              <span class="check-box">
-                <svg class="form-checkbox-icon">
+              <span class="check-box__icon">
+                <svg class="check-box__svg">
                   <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
               </span>
@@ -577,7 +576,7 @@
             >
           </div>
 
-          <button class="hero-btn send-btn" type="submit">Отправить</button>
+          <button class="hero-btn submit-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
