@@ -23,7 +23,7 @@ body {
 
 .link {
   text-decoration: none;
-  transition: color $transition $cubic;
+  @include trans(color);
 }
 
 h1,

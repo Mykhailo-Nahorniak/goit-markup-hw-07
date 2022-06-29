@@ -14,16 +14,14 @@
 }
 
 .social__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include df;
 
   width: 100%;
   height: 100%;
   border-radius: 50%;
   line-height: 0;
 
-  transition: background-color $transition $cubic;
+  @include trans(background-color);
 
   .footer & {
     background: rgba(255, 255, 255, 0.1);
@@ -41,7 +39,7 @@
   width: 20px;
   fill: $thumb-color;
 
-  transition: fill $transition var $cubic;
+  @include trans(fill);
 
   .social__link:hover &,
   .social__link:focus & {

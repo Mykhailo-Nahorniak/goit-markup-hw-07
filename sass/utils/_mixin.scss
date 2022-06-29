@@ -1,3 +1,13 @@
+@mixin trans($attribute) {
+  transition: $attribute 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin df($j-val: center, $a-val: center) {
+  display: flex;
+  justify-content: $j-val;
+  align-items: $a-val;
+}
+
 %button {
   min-width: 200px;
   font-family: inherit;
@@ -16,7 +26,7 @@
   margin: 0 auto;
   padding: 10px 24px;
 
-  transition: background-color $transition $cubic;
+  @include trans(background-color);
 
   &:hover,
   &:focus {

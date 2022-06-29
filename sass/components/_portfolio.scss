@@ -18,7 +18,7 @@
 
 .portfolio__link {
   display: block;
-  transition: box-shadow $transition $cubic;
+  @include trans(box-shadow);
 
   &:hover,
   &:focus {
@@ -46,14 +46,14 @@
 }
 
 .overlay {
-  display: flex;
-  align-items: center;
   position: absolute;
   top: 0;
   transform: translateY(101%);
   overflow: hidden;
 
-  transition: transform $transition $cubic;
+  @include df;
+
+  @include trans(transform);
 
   width: 100%;
   height: 100%;

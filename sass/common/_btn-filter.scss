@@ -1,6 +1,5 @@
 .filter {
-  display: flex;
-  justify-content: center;
+  @include df;
   margin-bottom: 50px;
 }
 
@@ -25,8 +24,9 @@
   border-radius: 4px;
   padding: 6px 22px;
 
-  transition: background-color $transition $cubic, color $transition $cubic,
-    box-shadow $transition $cubic;
+  @include trans(background-color);
+  @include trans(color);
+  @include trans(box-shadow);
 
   &:hover,
   &:focus {

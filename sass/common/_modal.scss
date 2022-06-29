@@ -7,7 +7,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity $transition $cubic;
+
+  @include trans(opacity);
 }
 
 .backdrop.is-hidden {
@@ -34,7 +35,7 @@
   background-color: $body-bg-color;
   padding: 48px 40px 32px 40px;
 
-  transition: transform $transition $cubic;
+  @include trans(transform);
 }
 
 .close-btn {
@@ -52,7 +53,7 @@
   cursor: pointer;
   background-color: transparent;
 
-  transition: transform $transition $cubic;
+  @include trans(transform);
 
   &:hover,
   &:focus {
@@ -66,7 +67,7 @@
   width: 18px;
   height: 18px;
 
-  transition: transform $transition $cubic;
+  @include trans(transform);
 
   .close-btn:hover &,
   .close-btn:focus & {
@@ -120,7 +121,7 @@
   background-color: transparent;
   padding-left: 42px;
 
-  transition: outline $transition $cubic;
+  @include trans(outline);
 
   &:focus-visible {
     outline: 1px solid #2196f3;
@@ -138,8 +139,7 @@
   width: 18px;
   height: 18px;
 
-  transition: fill $transition $cubic;
-
+  @include trans(fill);
   .input:focus-visible + & {
     fill: $accent-color;
   }
