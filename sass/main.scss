@@ -1,8 +1,11 @@
 @import 'utils/variables';
-@import 'utils/common';
+@import 'common/common';
+@import 'common/social';
 @import 'components/header';
 @import 'components/logo';
 @import 'components/nav';
 @import 'components/contacts';
 @import 'components/hero';
 @import 'components/features';
+@import 'components/gallery';
+@import 'components/team';
