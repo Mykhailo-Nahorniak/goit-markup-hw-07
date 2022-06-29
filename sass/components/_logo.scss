@@ -8,12 +8,22 @@
   color: $logo-color;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  &--alt-color {
+    color: $logo--alt-color;
+  }
+  .footer &--alt-color {
+    color: $footer-logo--alt-color;
+  }
 }
 
-.logo--alt-color {
-  color: $logo--alt-color;
+.footer .logo {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
-.footer_logo--alt-color {
-  color: $footer-logo--alt-color;
-}
+// .company-logo .secondary-color {
+//   display: inline-block;
+//   color: var(--footer-secondary-logo-color);
+// }
