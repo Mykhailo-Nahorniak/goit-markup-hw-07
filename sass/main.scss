@@ -1,8 +1,12 @@
 @import 'utils/variables';
 @import 'common/common';
+@import 'components/portfolio';
+@import 'common/logo';
+@import 'common/check-box';
+@import 'common/btn-filter';
+@import 'common/modal';
 @import 'common/social';
 @import 'components/header';
-@import 'components/logo';
 @import 'components/nav';
 @import 'components/contacts';
 @import 'components/hero';
@@ -12,5 +16,3 @@
 @import 'components/clients';
 @import 'components/footer';
 @import 'components/subscribe';
-@import 'components/modal';
-@import 'components/check-box';
