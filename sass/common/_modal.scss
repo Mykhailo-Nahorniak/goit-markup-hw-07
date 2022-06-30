@@ -33,7 +33,7 @@
   border-radius: 4px;
 
   background-color: $body-bg-color;
-  padding: 48px 40px 32px 40px;
+  padding: 40px;
 
   @include trans(transform);
 }
@@ -45,10 +45,11 @@
   width: 30px;
   height: 30px;
   line-height: 0;
-  display: block;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px;
+
+  @include df;
+
   margin-left: auto;
   cursor: pointer;
   background-color: transparent;
@@ -96,8 +97,15 @@
   text-align: center;
 }
 
+.form {
+  margin-top: 10px;
+}
 .form__container {
   margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 .input__label {
   display: block;
