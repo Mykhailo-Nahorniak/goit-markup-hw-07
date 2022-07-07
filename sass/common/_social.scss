@@ -43,9 +43,9 @@
 
   .social__link:hover &,
   .social__link:focus & {
-    fill: $btn-text-accent-color;
+    fill: $fill-color;
   }
   .connect & {
-    fill: #fff;
+    fill: $fill-color;
   }
 }

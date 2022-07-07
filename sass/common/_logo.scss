@@ -9,21 +9,16 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
-  &--alt-color {
+  &-alt-color {
     color: $logo--alt-color;
   }
-  .footer &--alt-color {
+  .footer &-alt-color {
     color: $footer-logo--alt-color;
   }
 }
 
-.footer .logo {
+.logo--footer {
   display: inline-block;
   padding: 0;
   margin-bottom: 24px;
 }
-
-// .company-logo .secondary-color {
-//   display: inline-block;
-//   color: var(--footer-secondary-logo-color);
-// }

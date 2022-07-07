@@ -24,9 +24,9 @@
   border-radius: 4px;
   padding: 6px 22px;
 
-  @include trans(background-color);
-  @include trans(color);
-  @include trans(box-shadow);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {

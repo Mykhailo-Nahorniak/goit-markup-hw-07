@@ -128,12 +128,12 @@
   border-radius: 4px;
   background-color: transparent;
   padding-left: 42px;
+  outline: transparent;
 
-  @include trans(outline);
+  @include trans(border);
 
   &:focus-visible {
-    outline: 1px solid #2196f3;
-    border: 0;
+    border: 1px solid #2196f3;
   }
 }
 
@@ -163,10 +163,12 @@
   background-color: transparent;
   resize: none;
   padding: 12px 16px;
+  outline: transparent;
+
+  @include trans(border);
 
   &:focus-visible {
-    outline: 1px solid #2196f3;
-    border: 0;
+    border: 1px solid $accent-color;
   }
 
   &::placeholder {
